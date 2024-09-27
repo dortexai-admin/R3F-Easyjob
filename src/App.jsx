@@ -1,16 +1,23 @@
+import { Loader } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
 import { Experience } from "./components/Experience";
+import { UI } from "./components/UI";
 
 function App() {
-	return (
-		<>
-			hello start
-			<Canvas shadows camera={{ position: [3, 3, 3], fov: 30 }}>
-				<color attach="background" args={["#505000"]} />
-				<Experience />
-			</Canvas>
-		</>
-	);
+  return (
+    <>
+      <Loader />
+      <UI />
+      <Canvas shadows camera={{ position: [-0.5, 1, 4], fov: 45 }}>
+        <group position-y={0}>
+          <Suspense fallback={null}>
+            <Experience />
+          </Suspense>
+        </group>
+      </Canvas>
+    </>
+  );
 }
 
 export default App;
