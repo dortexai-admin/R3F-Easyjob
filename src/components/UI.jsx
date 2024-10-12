@@ -4,20 +4,15 @@ import { useEffect } from "react";
 const pictures = [
   "Artboard1.2B",
   "Artboard1.2",
-  "DSC00680",
-  "DSC00933",
-  "DSC01011",
-  "DSC01040",
-  "DSC01064",
-  "DSC01071",
-  "DSC01103",
-  "DSC01145",
-  "DSC01420",
-  "DSC01461",
-  "DSC01489",
-  "DSC02031",
-  "DSC02064",
-  "DSC02069",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9"
 ];
 
 export const pageAtom = atom(0);
@@ -86,7 +81,7 @@ export const UI = () => {
         </div>
       </main>
 
-      <div className="fixed inset-0 flex items-center -rotate-2 select-none">
+      {/* <div className="fixed inset-0 flex items-center -rotate-2 select-none">
         <div className="relative font-rubic">
           <div className="bg-white/0  animate-horizontal-scroll flex items-center gap-8 w-max px-8">
             <h1 className="shrink-0 text-white text-10xl font-black ">
@@ -104,15 +99,7 @@ export const UI = () => {
             <h2 className="shrink-0 text-white text-9xl font-medium">
               3d Artist
             </h2>
-            {/* <h2 className="shrink-0 text-white text-9xl font-extralight italic">
-              Learn
-            </h2>
-            <h2 className="shrink-0 text-white text-13xl font-bold">
-              Practice
-            </h2>
-            <h2 className="shrink-0 text-transparent text-13xl font-bold outline-text italic">
-              Creative
-            </h2> */}
+            
           </div>
           <div className="absolute top-0 left-0 bg-white/0 animate-horizontal-scroll-2 flex items-center gap-8 px-8 w-max">
             <h1 className="shrink-0 text-white text-10xl font-black ">
@@ -133,15 +120,10 @@ export const UI = () => {
              <h2 className="shrink-0 text-white text-9xl font-extralight italic">
               3d Generalist
             </h2>
-            {/* <h2 className="shrink-0 text-white text-13xl font-bold">
-              Practice
-            </h2>
-            <h2 className="shrink-0 text-transparent text-13xl font-bold outline-text italic">
-              Creative
-            </h2> */}
+            
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
