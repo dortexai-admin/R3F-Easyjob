@@ -1,8 +1,6 @@
 # r3f-vite-starter
 A boilerplate to build R3F projects
 
-## Live demo
-https://khushalgrover.github.io/r3f-vite-starter/
 
 ## To run locally
 ```
