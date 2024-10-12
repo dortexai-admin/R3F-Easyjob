@@ -2,10 +2,10 @@ import { atom, useAtom } from "jotai";
 import { useEffect } from "react";
 
 const pictures = [
-  "Artboard1.2B",
-  "Artboard1.2",
   "1",
-  "2",
+  "a",
+  "3.2",
+  "3.2b",
   "3",
   "4",
   "5",
@@ -18,7 +18,7 @@ const pictures = [
 export const pageAtom = atom(0);
 export const pages = [
   {
-    front: "book-cover",
+    front: "front",
     back: pictures[0],
   },
 ];
@@ -31,7 +31,7 @@ for (let i = 1; i < pictures.length - 1; i += 2) {
 
 pages.push({
   front: pictures[pictures.length - 1],
-  back: "book-back",
+  back: "back",
 });
 
 export const UI = () => {
@@ -47,10 +47,10 @@ export const UI = () => {
       <main className=" pointer-events-none select-none z-10 fixed  inset-0  flex justify-between flex-col">
         <a
           className="pointer-events-auto mt-10 ml-10"
-          href="https://khushalgrover.github.io/portfolio/"
+          href="https://dortexai.com"
         >
           {/* <img className="w-20" src="/images/LOGO_TEXT.png" /> */}
-          <div className="text-white font-bancoStd text-2xl">Khushal Grover</div>
+          <div className="text-white text-2xl">DortexAI</div>
         </a>
         <div className="w-full overflow-auto pointer-events-auto flex justify-center">
           <div className="overflow-auto flex items-center gap-4 max-w-full p-10">
