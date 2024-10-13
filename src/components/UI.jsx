@@ -2,17 +2,17 @@ import { atom, useAtom } from "jotai";
 import { useEffect } from "react";
 
 const pictures = [
-  "1",
-  "a",
-  "3.2",
-  "3.2b",
-  "3",
-  "4",
-  "5",
-  "6",
+  "1.intro",
+  "1.b.content",
+  "2.2.opp",
+  "2.2b.skill",
+  "3.2.opp",
+  "3.2b.unskill",
+  "4.2.opp",
+  "4.2b.students",
   "7",
   "8",
-  "9"
+  "9",
 ];
 
 export const pageAtom = atom(0);
