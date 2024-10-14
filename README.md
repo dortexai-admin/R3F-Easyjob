@@ -2,15 +2,14 @@
 A boilerplate to build R3F projects
 
 
+
 ## To run locally
+its recommended to use only yarn 
 ```
 yarn
 yarn dev
 ```
-
-
 ## To Deploy 
-npm i gh-pages
 
 ```
 yarn build
